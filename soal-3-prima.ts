@@ -16,7 +16,7 @@ function cetakPrima(NIM: string) {
   const maksimal = digitTerakhir + 10;
   const prima = [];
 
-  for (let i = 0; i < maksimal; i++) {
+  for (let i = 0; i <= maksimal; i++) {
     if (cekPrima(i)) {
       prima.push(i);
     }
