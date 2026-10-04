@@ -1,6 +1,4 @@
-function cetakSegitiga() {
-  const NIM = "052026771";
-
+function cetakSegitiga(NIM: string) {
   const tinggiSegitiga = parseInt(NIM[NIM.length - 1]);
 
   for (let i = 0; i < tinggiSegitiga; i++) {
@@ -12,4 +10,4 @@ function cetakSegitiga() {
   }
 }
 
-cetakSegitiga();
+cetakSegitiga("052026771");

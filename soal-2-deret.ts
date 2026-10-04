@@ -1,14 +1,15 @@
-function cetakDeret() {
-  const NIM = "052026771";
-
+function cetakDeret(NIM: string) {
   const awal = parseInt(NIM.slice(-2));
   const step = parseInt(NIM[NIM.length - 3]);
+  const deret = [];
 
   let i = 0;
   for (let j = awal; i < 10; j += step) {
-    console.log(j);
+    deret.push(j);
     i++;
   }
+
+  console.log(deret.join(", "));
 }
 
-cetakDeret();
+cetakDeret("052026771");
